@@ -148,4 +148,10 @@ Used HTML format (HTML should contain this part):
 You can add classes, ID-s, links and other similar attributes to the HTML. The general structure
 for the menu part should be as given above.Give body fixed height to make content scrollable. If
 the menu does not fit well, apply a creative approach solving it.
-ILLUSTRATIVE PICTURES
+
+### ILLUSTRATIVE PICTURES
+
+![Pic 1](./img/img1.png)
+![Pic 2](./img/img2.png)
+![Pic 3](./img/img3.png)
+![Pic 4](./img/img4.png)

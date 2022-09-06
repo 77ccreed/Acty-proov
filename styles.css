@@ -19,14 +19,16 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  --breakpoint-mobile: 480px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1200px;
 }
 
 html {
     font-size: 62.5%;
     font-family: 'Arial', sans-serif;
+}
+
+body {
+ max-width: 1200px;
+  margin: 0 auto;
 }
 
 li {
@@ -66,7 +68,7 @@ a {
     color: var(--main-color-black);
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,12 +145,29 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}    
+
+.content {
+  padding-top:10vh;
+}
 @media only screen and (min-width:768px){
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    width: 1200px;
+    background-color: #fff;
 }
 
 .hamburger {
@@ -190,12 +209,4 @@ a {
     color: var(--main-color-blue)
 }
 
-}
-
-
-@media only screen and (min-width:1200px){
-  .header{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 }

@@ -142,7 +142,7 @@ a {
 }
 
 .nav-item:hover {
-    background-color: #f5f5f5;
+    background-color: var(--main-color-blue);
     border-radius: 5px;
 }
 
@@ -152,16 +152,15 @@ a {
     color: #475569;
 }
 
-/*.nav-link:hover{
+.nav-link:hover {
     color: var(--main-color-white);
-    background-color: var(--main-color-blue);
-    border-radius: 5px;
-}*/
+    transition: 0.3s;
+}
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #482ff7;
+    color: var(--main-color-blue)
 }
 
 }

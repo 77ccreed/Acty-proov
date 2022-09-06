@@ -39,6 +39,31 @@ a {
 
 .header{
     border-bottom: 1px solid #E2E8F0;
+    height: 5rem;
+}
+
+.banner {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 1rem;
+    height: 5rem;
+}
+
+.banner h1{
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    color: var(--main-color-blue);
+     white-space: nowrap;    
+}
+
+.banner p{
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-light);
+    color: var(--main-color-black);
 }
 
 .navbar {
@@ -61,11 +86,13 @@ a {
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        height: calc(100vh - 5rem);
+        height: calc(100vh - 10rem);
+        margin-top:5rem;
         text-align: center;
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
+            border:1px solid red;
     }
 
     .nav-menu.active {
@@ -73,7 +100,7 @@ a {
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+       /* margin: 2.5rem 0;*/
     }
 
     .nav-link{
@@ -141,7 +168,7 @@ a {
     color: var(--main-color-blue);
 }
 
-.nav-item:hover {
+.nav-item:hover{
     background-color: var(--main-color-blue);
     border-radius: 5px;
 }
@@ -163,4 +190,12 @@ a {
     color: var(--main-color-blue)
 }
 
+}
+
+
+@media only screen and (min-width:1200px){
+  .header{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

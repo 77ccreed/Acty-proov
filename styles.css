@@ -15,9 +15,12 @@
   --font-size-medium: 1.6rem;
   --font-size-large: 2.4rem;
   --font-size-xlarge: 3.2rem;
+
   --font-weight-light: 300;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+
+  --content-max-width: 1200px;
 
 }
 
@@ -27,7 +30,7 @@ html {
 }
 
 body {
- max-width: 1200px;
+ max-width: var(--content-max-width);
   margin: 0 auto;
 }
 
@@ -74,6 +77,8 @@ a {
     align-items: center;
     padding: 1rem 1.5rem;
     padding-left: calc(50% - 25px);
+    background-color: var(--main-color-white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
     .nav-menu {
@@ -166,8 +171,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    width: 1200px;
-    background-color: #fff;
+    width: var(--content-max-width);
 }
 
 .hamburger {

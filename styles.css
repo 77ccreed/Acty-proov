@@ -93,7 +93,8 @@ a {
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        height: calc(100vh - 10rem);
+        min-height: calc(100vh - 10rem);
+        height: fit-content;
         margin-top:5rem;
         text-align: center;
         transition: 0.3s;
@@ -121,6 +122,43 @@ a {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     color: #482ff7;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: static;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-menu.active .subnav-content a {
+    display: block;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: none;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: var(--main-color-blue);
+  color: var(--main-color-white);
+}
+
+
+.subnav-content a:focus {
+  background-color: var(--main-color-white);
+  color: var(--main-color-blue);
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.nav-item:hover .subnav-content {
+  display: block;
 }
 
     .hamburger {

@@ -3,7 +3,7 @@ const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 
 hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+navLink.forEach(n => n.addEventListener("click", openNavLink));
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
@@ -13,6 +13,18 @@ function mobileMenu() {
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
+}
+
+function openNavLink(event) {
+  event.preventDefault();
+  document.getElementsByClassName("nav-link").style.display = "block";
+  /*
+  Display the block element, and add a nested subnav ul element to the DOM
+  */
+
+
+
+
 }
 
 // When the user scrolls the page, execute myFunction

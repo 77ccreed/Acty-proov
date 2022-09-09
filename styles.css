@@ -282,6 +282,7 @@ a {
     margin: auto;
     font-size: 1.6rem;
     font-weight: 400;
+    pointer-events: all;
 }
 
 /* Style the subnav links */

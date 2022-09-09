@@ -209,7 +209,7 @@ a {
     height: 150vh;
 }
 
-.activeContent {
+.active-content {
     background-color: var(--active-menu-bg-color);
 }
 

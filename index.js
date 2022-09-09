@@ -11,7 +11,7 @@
   function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-    mainContent.classList.toggle("activeContent");
+    mainContent.classList.toggle("active-content");
     console.log(hamburger.classList.contains("active"));
   }
 

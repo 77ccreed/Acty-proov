@@ -4,36 +4,37 @@
   const navLink = document.querySelectorAll(".nav-link");
 
   hamburger.addEventListener("click", mobileMenu);
-  navLink.forEach(n => n.addEventListener("click", openNavLink));
+  navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-  const mobileMenu = () => {
+  function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   }
 
-  const closeMenu = () => {
+  function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   }
-
-  const openNavLink = (e) => {
-    e.preventDefault();
-    document.getElementsByClassName("nav-link").style.display = "block";
-  }
-})()
+})();
 
 
-  (() => {
-    window.onscroll = () => addOrRemoveSticky();
+(() => {
+  // When the user scrolls the page, execute function
+  window.onscroll = function () { addOrRemoveSticky() };
 
-    const navbar = document.getElementById("navbar");
-    let sticky = navbar.offsetTop;
+  // Get the navbar
+  const navbar = document.getElementById("navbar");
 
-    const addOrRemoveSticky = () => {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
+  // Get the offset position of the navbar
+  let sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  const addOrRemoveSticky = () => {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
     }
-  })()
+  }
+})();
+

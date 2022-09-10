@@ -67,6 +67,6 @@ console.log(height);
 
 const setNavMenuHeight = () => {
   const navMenu = document.querySelector(".nav-menu");
-  navMenu.style.height = `${height}px`;
+  navMenu.style.minHeight = `${height}px`;
 }
 

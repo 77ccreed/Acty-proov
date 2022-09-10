@@ -60,7 +60,7 @@
 })();
 
 
-const height = window.innerHeight || document.documentElement.clientHeight ||
+/*const height = window.innerHeight || document.documentElement.clientHeight ||
   document.body.clientHeight;
 
 console.log(height);
@@ -68,5 +68,6 @@ console.log(height);
 const setNavMenuHeight = () => {
   const navMenu = document.querySelector(".nav-menu");
   navMenu.style.minHeight = `${height}px`;
-}
+  navMenu.style.height = 'fit-content';
+}*/
 

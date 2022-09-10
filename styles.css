@@ -95,6 +95,7 @@ a {
     text-align: center;
     transition: 0.3s;
     background-color: var(--active-menu-bg-color);
+    border:1px solid red;
 }
 
 .nav-menu.active {

@@ -3,10 +3,14 @@
   const navMenu = document.querySelector(".nav-menu");
   const navLink = document.querySelectorAll(".nav-link");
 
+  const navItem = document.querySelectorAll(".nav-item");
+
   const mainContent = document.querySelector(".content");
 
   hamburger.addEventListener("click", mobileMenu);
-  navLink.forEach(n => n.addEventListener("click", closeMenu));
+  navLink.forEach(n => n.addEventListener("click", mobileMenuClick));
+  navItem.forEach(n => n.addEventListener("click", console.log("clicked nav-item")));
+
 
   function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -19,6 +23,11 @@
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
     console.log(hamburger.classList.contains("active"));
+  }
+
+  function mobileMenuClick(e) {
+    e.preventDefault();
+    console.log("clicked");
   }
 })();
 

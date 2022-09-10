@@ -102,14 +102,22 @@ a {
 }
 
 .nav-item {
- /* margin: 2.5rem 0;*/
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+    color: red;
+    position: relative;
+    border: 1px solid red;
+    width: auto;
 }
+
 
 .nav-link{
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-medium);
     color: #475569;
     position: relative;
+    border: 1px solid red;
+    width: auto;
 }
 
 .nav-link:not(:only-child):after {
@@ -125,7 +133,8 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.nav-link:not(:only-child):focus:after  {
+
+.nav-link:not(:only-child):focus:after   {
     content: "-";
 }
 
@@ -256,7 +265,7 @@ a {
     color: #475569;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: var(--main-color-white);
     transition: 0.3s;
 }

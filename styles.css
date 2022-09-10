@@ -113,20 +113,20 @@ a {
 }
 
 .nav-link:not(:only-child):after {
-     content: "+";
-     display: block;
-     position: absolute;
-     top: 50%;
-     right: -2rem;
-     transform: translateY(-50%);
-     color: var(--main-color-blue);
-     font-size: 18px;
-     font-weight: 700;
-     transition: 0.3s ease-in-out;
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    color: var(--main-color-blue);
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
 }
 
-.nav-link:not(:only-child):focus:after {
-   content: "-";
+.nav-link:not(:only-child):focus:after  {
+    content: "-";
 }
 
 
@@ -149,7 +149,7 @@ a {
 
 .nav-menu.active .subnav-content a {
     display: block;
-    pointer-events: all;
+    /*pointer-events: all;*/
 }
 
 /* Style the subnav links */

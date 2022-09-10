@@ -103,29 +103,27 @@ a {
 }
 
 .nav-item {
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-medium);
-    color: red;
+   padding:1rem ;
     border: 1px solid var(--main-color-black);
     background-color: gainsboro;
     position: relative;
 }
 
 .nav-item a {
-    color: var(--main-color-black);
+    /*color: var(--main-color-black);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-medium);
     border: 1px solid red;
     width: stretch;
-    margin-top: .6rem;
+    margin-top: .6rem;*/
 }
 
 
 .nav-link{
     font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
     position: static;
-    border: 1px solid red;
+
 
 }
 
@@ -134,9 +132,9 @@ a {
     display: block;
     position: absolute;
     right: 3rem;
-    top: 10px;
+    top: 19px;
     transform: translateY(-50%);
-    color: red;
+    color: var(--main-color-blue);
     font-size: 18px;
     font-weight: 700;
     transition: 0.3s ease-in-out;
@@ -152,7 +150,7 @@ a {
 .nav-logo {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
-    color: #482ff7;
+    color: var(--main-color-blue)
 }
 
 /* Style the subnav content - positioned absolute */
@@ -163,6 +161,7 @@ a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     pointer-events: none;
+
 }
 
 .nav-menu.active .subnav-content a {
@@ -179,7 +178,8 @@ a {
     text-align: center;
     background-color: var(--main-color-blue);
     color: var(--main-color-white);
-    border:1px solid red;
+    border:1px solid var(--main-color-white);
+    margin-top: .3rem;
 }
 
 
@@ -253,26 +253,24 @@ a {
 
 .nav-menu {
     all:unset;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;  
+    grid-auto-flow: column;
     width: 80%;
 }
 
 .nav-item {
-    /*padding: 1rem;  */
     color: var(--main-color-blue);
+    border-radius: 5px;
 }
 
 .nav-item:hover{
     background-color: var(--main-color-blue);
-    border-radius: 5px;
 }
 
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: var(--main-color-black);
     padding: 1rem;
 }
 
@@ -281,7 +279,7 @@ a {
     transition: 0.3s;
 }
 
-.nav-link:not(:only-child):after {
+.nav-item:after {
     display: none;
 }
 

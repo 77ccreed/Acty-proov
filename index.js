@@ -6,11 +6,13 @@
   const navItem = document.querySelectorAll(".nav-item");
 
   const mainContent = document.querySelector(".content");
+  let clickedSubNavItem = document.querySelector(".subnav-content-item");
 
   hamburger.addEventListener("click", mobileMenu);
   navLink.forEach(n => n.addEventListener("click", mobileMenuClick));
-  navItem.forEach(n => n.addEventListener("click", console.log("clicked nav-item")));
+  /*navItem.forEach(n => n.addEventListener("click", console.log("clicked nav-item")));*/
 
+  clickedSubNavItem.addEventListener("click", subNavClick);
 
   function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -28,6 +30,11 @@
   function mobileMenuClick(e) {
     e.preventDefault();
     console.log("clicked");
+  }
+
+  function subNavClick(e) {
+
+    console.log("clicked subnav");
   }
 })();
 
@@ -51,4 +58,15 @@
     }
   }
 })();
+
+
+const height = window.innerHeight || document.documentElement.clientHeight ||
+  document.body.clientHeight;
+
+console.log(height);
+
+const setNavMenuHeight = () => {
+  const navMenu = document.querySelector(".nav-menu");
+  navMenu.style.height = `${height}px`;
+}
 

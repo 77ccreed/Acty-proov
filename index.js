@@ -7,12 +7,13 @@
 
   const mainContent = document.querySelector(".content");
   let clickedSubNavItem = document.querySelector(".subnav-content");
+  //let clickedSubNavItemTagA = document.querySelector(".subnav-content-link");
 
   hamburger.addEventListener("click", mobileMenu);
   navLink.forEach(n => n.addEventListener("click", mobileMenuClick));
   /*navItem.forEach(n => n.addEventListener("click", console.log("clicked nav-item")));*/
 
-  clickedSubNavItem.addEventListener("click", subNavClick);
+  //clickedSubNavItemTagA.addEventListener("click", subNavClick);
 
   function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -33,10 +34,19 @@
   }
 
   function subNavClick(e) {
-
-    console.log("clicked subnav");
+    e.preventDefault();
+    alert("Congratulations! You have clicked the subnav link!");
   }
 })();
+
+//Subnav link click event
+let elements = document.getElementsByClassName("subnav-content-link");
+for (var i = 0, len = elements.length; i < len; i++) {
+  elements[i].onclick = function (e) {
+    e.preventDefault();
+    alert("Congratulations! You have clicked the subnav link!");
+  }
+}
 
 
 

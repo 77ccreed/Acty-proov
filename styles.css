@@ -95,7 +95,6 @@ a {
     text-align: center;
     transition: 0.3s;
     background-color: var(--active-menu-bg-color);
-    border:1px solid red;
 }
 
 .nav-menu.active {
@@ -160,38 +159,35 @@ a {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    pointer-events: none;
-
+    pointer-events: all;
 }
 
-.nav-menu.active .subnav-content a {
-    display: block;
-    /*pointer-events: all;*/
-}
+
 
 /* Style the subnav links */
 .subnav-content a {
+    display: block;
     float: none;
     padding: 12px;
     text-decoration: none;
-    display: block;
     text-align: center;
     background-color: var(--main-color-blue);
     color: var(--main-color-white);
     border:1px solid var(--main-color-white);
     margin-top: .3rem;
+    pointer-events: none;
 }
 
-
-.subnav-content a:focus {
-    background-color: var(--main-color-white);
-    color: var(--main-color-blue);
-}
 
 /* When you move the mouse over the subnav container, open the subnav content */
-.nav-item:hover .subnav-content {
+.nav-item:hover .subnav-content{
     display: block;
 }
+
+ .subnav-content:hover .subnav-content-link{
+    pointer-events: all;
+}
+
 
 .hamburger {
     display: block;
@@ -205,7 +201,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: var(--main-color-black);
 }
 
 .hamburger.active .bar:nth-child(2) {

@@ -88,13 +88,14 @@ a {
   top: 5rem;
   flex-direction: column;
   width: 100%;
-  height: calc(55vh - 10rem);
-  /*height: fit-content;*/
+  min-height: calc(95vh - 10rem);
+  height: fit-content;
   margin-top: 5rem;
   text-align: center;
   transition: 0.3s;
   background-color: var(--active-menu-bg-color);
   z-index: 1;
+  border: 5px solid red;
 }
 
 .nav-menu.active {
@@ -149,13 +150,12 @@ a {
 .subnav-content a {
   display: block;
   float: none;
-  padding: 12px;
-  text-decoration: none;
+  padding: 8px;
   text-align: center;
   background-color: var(--main-color-blue);
   color: var(--main-color-white);
-  border: 1px solid var(--main-color-white);
-  margin-top: .3rem;
+  border: 1px solid var(--main-color-black);
+  margin-top: .2rem;
   pointer-events: none;
 }
 

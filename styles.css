@@ -133,7 +133,7 @@ a {
 .nav-logo {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
-  color: var(--main-color-blue)
+  color: red;
 }
 
 .subnav-content {
@@ -255,12 +255,6 @@ a {
 
   .nav-item:after {
     display: none;
-  }
-
-  .nav-logo {
-    font-size: var(--font-size-large);
-    font-weight: var(--font-weight-bold);
-    color: var(--main-color-blue);
   }
 
   .subnav-content {

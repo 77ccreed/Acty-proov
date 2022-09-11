@@ -83,13 +83,12 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     grid-gap: 2rem;
-   /* padding: 2rem 0;*/
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 10rem);
+    min-height: calc(95vh - 10rem);
     height: fit-content;
     margin-top:5rem;
     text-align: center;
@@ -108,22 +107,10 @@ a {
     position: relative;
 }
 
-.nav-item a {
-    /*color: var(--main-color-black);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-medium);
-    border: 1px solid red;
-    width: stretch;
-    margin-top: .6rem;*/
-}
-
-
 .nav-link{
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
     position: static;
-
-
 }
 
 .nav-item:after {
@@ -139,12 +126,9 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-
-.nav-item:hover:after   
-{
+.nav-item:hover:after {
     content: "-";
 }
-
 
 .nav-logo {
     font-size: var(--font-size-large);
@@ -152,7 +136,6 @@ a {
     color: var(--main-color-blue)
 }
 
-/* Style the subnav content - positioned absolute */
 .subnav-content {
     display: none;
     position: static;
@@ -162,9 +145,6 @@ a {
     pointer-events: all;
 }
 
-
-
-/* Style the subnav links */
 .subnav-content a {
     display: block;
     float: none;
@@ -178,16 +158,13 @@ a {
     pointer-events: none;
 }
 
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.nav-item:hover .subnav-content{
+.nav-item:hover .subnav-content {
     display: block;
 }
 
- .subnav-content:hover .subnav-content-link{
+ .subnav-content:hover .subnav-content-link {
     pointer-events: all;
 }
-
 
 .hamburger {
     display: block;
@@ -235,6 +212,7 @@ a {
 }
 
 @media only screen and (min-width:768px){
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -259,18 +237,18 @@ a {
     border-radius: 5px;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background-color: var(--main-color-blue);
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--main-color-black);
     padding: 1rem;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--main-color-white);
     transition: 0.3s;
 }
@@ -285,11 +263,10 @@ a {
     color: var(--main-color-blue)
 }
 
-/* Style the subnav content - positioned absolute */
 .subnav-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--main-color-white);
     width: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -299,7 +276,6 @@ a {
     pointer-events: all;
 }
 
-/* Style the subnav links */
 .subnav-content a {
     float: none;
     padding: 12px;
@@ -309,13 +285,6 @@ a {
     color: var(--main-color-white);
 }
 
-
-.subnav-content a:hover {
-    background-color: var(--main-color-white);
-    color: var(--main-color-blue);
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
 .nav-item:hover .subnav-content {
     display: block;
 }

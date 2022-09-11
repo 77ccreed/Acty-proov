@@ -88,13 +88,15 @@ a {
   top: 5rem;
   flex-direction: column;
   width: 100%;
-  min-height: calc(75vh - 10rem);
+  height: calc(55vh - 10rem);
   /*height: fit-content;*/
   margin-top: 5rem;
   text-align: center;
   transition: 0.3s;
   background-color: var(--active-menu-bg-color);
   z-index: 1;
+  margin-bottom: 15rem;
+  padding-bottom: 15rem;
 }
 
 .nav-menu.active {
@@ -102,7 +104,7 @@ a {
 }
 
 .nav-item {
-  padding: 1rem;
+  padding: .7rem 3rem;
   border: 1px solid var(--main-color-black);
   background-color: gainsboro;
   position: relative;

@@ -11,18 +11,15 @@
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     mainContent.classList.toggle("active-content");
-    console.log(hamburger.classList.contains("active"));
   }
 
   function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-    console.log(hamburger.classList.contains("active"));
   }
 
   function mobileMenuClick(e) {
     e.preventDefault();
-    console.log("clicked");
   }
 })();
 

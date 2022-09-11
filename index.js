@@ -13,11 +13,6 @@
     mainContent.classList.toggle("active-content");
   }
 
-  function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  }
-
   function mobileMenuClick(e) {
     e.preventDefault();
   }

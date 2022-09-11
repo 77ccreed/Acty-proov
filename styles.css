@@ -250,7 +250,7 @@ a {
 
   .nav-link:hover {
     color: var(--main-color-white);
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
   }
 
   .nav-item:after {
@@ -260,7 +260,7 @@ a {
   .nav-logo {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
-    color: var(--main-color-blue)
+    color: var(--main-color-blue);
   }
 
   .subnav-content {

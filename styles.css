@@ -82,7 +82,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   position: fixed;
   left: -100%;
   top: 5rem;
@@ -95,8 +95,6 @@ a {
   transition: 0.3s;
   background-color: var(--active-menu-bg-color);
   z-index: 1;
-  margin-bottom: 15rem;
-  padding-bottom: 15rem;
 }
 
 .nav-menu.active {
@@ -104,7 +102,7 @@ a {
 }
 
 .nav-item {
-  padding: .7rem 3rem;
+  padding: 1rem 7rem;
   border: 1px solid var(--main-color-black);
   background-color: gainsboro;
   position: relative;
@@ -136,7 +134,7 @@ a {
 .nav-logo {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
-  color: var(--main-color-blue);
+  color: red;
 }
 
 .subnav-content {

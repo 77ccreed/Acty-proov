@@ -2,18 +2,10 @@
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navLink = document.querySelectorAll(".nav-link");
-
-  const navItem = document.querySelectorAll(".nav-item");
-
   const mainContent = document.querySelector(".content");
-  let clickedSubNavItem = document.querySelector(".subnav-content");
-  //let clickedSubNavItemTagA = document.querySelector(".subnav-content-link");
 
   hamburger.addEventListener("click", mobileMenu);
   navLink.forEach(n => n.addEventListener("click", mobileMenuClick));
-  /*navItem.forEach(n => n.addEventListener("click", console.log("clicked nav-item")));*/
-
-  //clickedSubNavItemTagA.addEventListener("click", subNavClick);
 
   function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -32,11 +24,6 @@
     e.preventDefault();
     console.log("clicked");
   }
-
-  function subNavClick(e) {
-    e.preventDefault();
-    alert("Congratulations! You have clicked the subnav link!");
-  }
 })();
 
 //Subnav link click event
@@ -47,7 +34,6 @@ for (var i = 0, len = elements.length; i < len; i++) {
     alert("Congratulations! You have clicked the subnav link!");
   }
 }
-
 
 
 // When the user scrolls the page, execute function
@@ -67,17 +53,3 @@ const addOrRemoveSticky = () => {
     navbar.classList.remove("sticky");
   }
 }
-
-
-
-/*const height = window.innerHeight || document.documentElement.clientHeight ||
-  document.body.clientHeight;
-
-console.log(height);
-
-const setNavMenuHeight = () => {
-  const navMenu = document.querySelector(".nav-menu");
-  navMenu.style.minHeight = `${height}px`;
-  navMenu.style.height = 'fit-content';
-}*/
-

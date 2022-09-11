@@ -88,8 +88,8 @@ a {
   top: 5rem;
   flex-direction: column;
   width: 100%;
-  min-height: calc(85vh - 10rem);
-  height: fit-content;
+  min-height: calc(75vh - 10rem);
+  /*height: fit-content;*/
   margin-top: 5rem;
   text-align: center;
   transition: 0.3s;
@@ -134,7 +134,7 @@ a {
 .nav-logo {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
-  color: red;
+  color: var(--main-color-blue);
 }
 
 .subnav-content {

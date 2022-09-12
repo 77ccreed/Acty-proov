@@ -137,7 +137,7 @@ a {
 .nav-logo {
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
-  color: red;
+  color: var(--main-color-blue);
 }
 
 .subnav-content {

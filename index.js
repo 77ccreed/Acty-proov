@@ -3,6 +3,7 @@
   const navMenu = document.querySelector(".nav-menu");
   const navLink = document.querySelectorAll(".nav-link");
   const mainContent = document.querySelector(".content");
+  let subnavContentLinks = document.getElementsByClassName("subnav-content-link");
 
   hamburger.addEventListener("click", mobileMenu);
   navLink.forEach(n => n.addEventListener("click", mobileMenuClick));
@@ -18,14 +19,12 @@
   }
 
   //Subnav link click event
-  let elements = document.getElementsByClassName("subnav-content-link");
-  for (var i = 0, len = elements.length; i < len; i++) {
-    elements[i].onclick = function (e) {
+  for (let i = 0, len = subnavContentLinks.length; i < len; i++) {
+    subnavContentLinks[i].onclick = function (e) {
       e.preventDefault();
       alert("Congratulations! You have clicked the subnav link!");
     }
   }
-
 
   // When the user scrolls the page, execute function
   window.onscroll = function () { addOrRemoveSticky() };

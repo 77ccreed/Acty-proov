@@ -11,7 +11,7 @@ and in the mobile view it is centered.
 Whole HTML content is placed into container. It’s max width is 1200px and is horizontally
 centered.
 
-## Bonus tasks - if the above is too easy':'
+## Bonus tasks - if the above is too easy
 
 1) Menu links have sublinks, which in desktop view open on hover under the according
 menu link (links are one under another). And in mobile view links expand. In other words
@@ -23,12 +23,12 @@ scrolled so far that the screen’s upper edge reaches the menu's upper edge. Wh
 back up, fixed/sticky status disappears from the menu again, when the upper contect bar is
 visible on the screen.
 
-## Please use':'
+## Please use
 
 HTML, CSS, JS. If you feel confident with using any other lightweight library, then
 feel free to use it for a good reason.
 
-## Format':'
+## Format
 
 Please send relevant HTML, CSS, JS, images and other necessary files needed for review and
 testing in the local environment.
